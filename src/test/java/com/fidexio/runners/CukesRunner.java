@@ -12,10 +12,8 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
-        glue = "src/test/java/com/fidexio/step_definitions",
+        glue = "com/fidexio/step_definitions",
         dryRun = false,
-        stepNotifications = false,
-        monochrome = true,
         tags = "",
         publish = false
 

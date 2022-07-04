@@ -11,27 +11,14 @@ public class FidexioLogInPage {
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
+    @FindBy(xpath = "//input[@id='login']") public WebElement UserNameInput;
+    @FindBy(id = "password") public WebElement passwordInput;
+    @FindBy(xpath = "//button[contains(text(),'Log in')]")public WebElement LoginButton;
 
-
-
-    @FindBy(xpath = "//input[@id='login']")  WebElement UserNameInput;
-
-    @FindBy(id = "password") WebElement passwordInput;
-
-
-    @FindBy(xpath = "//button[contains(text(),'Log in')]") WebElement LoginButton;
-
-    @FindBy(xpath = "//*[text() = 'Reset Password']")  WebElement ResetPasswordButton;
-
-
+    @FindBy(xpath = "//*[text() = 'Reset Password']")public  WebElement ResetPasswordButton;
 
     @FindBy (xpath = "//p")
-    public static WebElement AlertMessage;
-
-
-
-    @FindBy(xpath = "//span[@class=\'oe_topbar_name\']")
-    public WebElement UserIdButton;
+    public WebElement AlertMessage;
 
     @FindBy(xpath = "//a[text()='Log out']")
     public WebElement LogOutButton;
