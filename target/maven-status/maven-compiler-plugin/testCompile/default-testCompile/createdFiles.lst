@@ -1,0 +1,12 @@
+com\fidexio\pages\HomePage.class
+com\fidexio\utilities\ConfigurationReader.class
+com\fidexio\utilities\BrowserUtils$1.class
+com\fidexio\utilities\BrowserUtils.class
+com\fidexio\step_definitions\LogOutPage.class
+com\fidexio\utilities\Driver.class
+com\fidexio\runners\Rerun.class
+com\fidexio\step_definitions\Hooks.class
+com\fidexio\pages\FidexioLogInPage.class
+com\fidexio\pages\ResetPasswordPage.class
+com\fidexio\runners\CukesRunner.class
+com\fidexio\step_definitions\LogInTestPage.class
