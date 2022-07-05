@@ -3,6 +3,7 @@ com\fidexio\utilities\ConfigurationReader.class
 com\fidexio\utilities\BrowserUtils$1.class
 com\fidexio\utilities\BrowserUtils.class
 com\fidexio\step_definitions\LogOutPage.class
+com\fidexio\pages\ReadExcel.class
 com\fidexio\utilities\Driver.class
 com\fidexio\runners\Rerun.class
 com\fidexio\step_definitions\Hooks.class

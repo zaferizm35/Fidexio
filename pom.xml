@@ -30,7 +30,34 @@
                     </includes>
                 </configuration>
             </plugin>
-
+            <plugin>
+                <groupId>tech.grasshopper</groupId>
+                <artifactId>cucumber-pdf-plugin</artifactId>
+                <version>1.11.0</version>
+                <executions>
+                    <execution>
+                        <id>report</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>pdfreport</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <cucumberJsonReportDirectory>${project.build.directory}/json-report</cucumberJsonReportDirectory>
+                    <cucumberPdfReportDirectory>secret</cucumberPdfReportDirectory>
+                    <cucumberPdfReportDirectoryTimeStamp>d M yy H m s</cucumberPdfReportDirectoryTimeStamp>
+                    <title>X Files Report</title>
+                    <titleColor>7FFFD4</titleColor>
+                    <passColor>00008B</passColor>
+                    <failColor>964B00</failColor>
+                    <skipColor>FFA500</skipColor>
+                    <displayFeature>false</displayFeature>
+                    <displayScenario>false</displayScenario>
+                    <displayDetailed>false</displayDetailed>
+                    <cucumberJsonReportDirectory>${project.build.directory}/json-report</cucumberJsonReportDirectory>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
@@ -65,6 +92,8 @@
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
@@ -94,6 +123,13 @@
             <version>7.3.3</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.2</version>
+        </dependency>
+
 
         <dependency>
             <groupId>me.jvt.cucumber</groupId>

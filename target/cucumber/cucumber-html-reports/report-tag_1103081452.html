@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>05 Tem 2022, 08:38</td>
+      <td>05 Tem 2022, 16:30</td>
     </tr>
   </tbody>
 </table>
@@ -127,9 +127,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@FIDE-1016</td>
+          <td      class="passed"    >3</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
-          <td >0</td>
-          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="0">0.000</td>
+          <td class="duration" data-value="1327833100">1.327</td>
           <td class="fa&#305;led">Fa&#305;led</td>
         </tr>
         </tbody>
@@ -181,7 +181,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.327</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -220,11 +220,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When sk&#305;pped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">user enters empty username</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.260</span>
 
 </div>
 
@@ -247,11 +247,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user enters empty password</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.494</span>
 
 </div>
 
@@ -274,11 +274,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks to login button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.331</span>
 
 </div>
 
@@ -301,11 +301,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then sk&#305;pped">
+<div class="brief step-name-Then fa&#305;led">
   <span class="keyword indention">Then</span>
   <span class="name">user see Please fill out this field message</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.240</span>
 
 </div>
 
@@ -313,6 +313,23 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.AssertionError</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.fidexio.step_definitions.LogInTestPage.user_see_please_fill_out_this_field_message(LogInTestPage.java:110)
+	at &#10045;.user see Please fill out this field message(file:///C:/Users/arasan/IdeaProjects/Fidexio/src/test/resources/features/LogIn.feature:76)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -332,9 +349,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -344,61 +361,36 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-3" class="inner-level collapse collapsable-details  in ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief fa&#305;led">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.fidexio.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.483</span>
+  <span class="lead-duration duration">0.742</span>
 
           </div>
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.WebDriverException: failed serving request POST /wd/hub/session: Unauthorized
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ARASAN', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: driver.version: Driver
-remote stacktrace: 
-	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.fidexio.utilities.Driver.getDriver(Driver.java:55)
-	at com.fidexio.step_definitions.Hooks.teardownScenario(Hooks.java:21)
-</pre>
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+      <a>&quot;Please fill out this field&quot; message should be displayed if the password or username is empty</a>
+      <a href="embeddings/embedding_571252442.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-5" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_571252442.png">
       </div>
     </div>
   </div>
-
-
-
-
+  </div>
 
         </div>
     </div>

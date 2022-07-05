@@ -50,18 +50,12 @@ public class Driver {
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
-                case "remote-chrome":  chromeOptions = new ChromeOptions();
-                    try { URL url = new URL(  "https://oauth-estat21-d8e6d:*****0586@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
-                        driverPool.set(new RemoteWebDriver(url, chromeOptions)); }
-                    catch (MalformedURLException e) {e.printStackTrace();} break;
-                case "remote-firefox": FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    try { URL url = new URL(  "http://54.234.80.193:4444/wd/hub");
-                        driverPool.set(new RemoteWebDriver(url, firefoxOptions)); }
+                case "saucelab":
+                    chromeOptions = new ChromeOptions();
+                    try { URL url = new URL(  "https://oauth-estat21-d8e6d:3c8dff7a-72ad-48eb-b158-71c1bc4d0586@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
+                    driverPool.set(new RemoteWebDriver(url, chromeOptions)); }
                     catch (MalformedURLException e) {e.printStackTrace();}
                     break;
-
-
-
 
             }
         }

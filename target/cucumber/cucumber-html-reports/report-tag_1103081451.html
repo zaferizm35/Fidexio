@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>05 Tem 2022, 08:38</td>
+      <td>05 Tem 2022, 16:30</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@FIDE-1015</td>
+          <td      class="passed"    >24</td>
           <td >0</td>
           <td >0</td>
-          <td     class="skipped"   >24</td>
           <td >0</td>
           <td >0</td>
           <td class="total">24</td>
 
+          <td  class="passed"    >6</td>
           <td >0</td>
-          <td  class="failed"    >6</td>
           <td class="total">6</td>
 
-          <td class="duration" data-value="0">0.000</td>
-          <td class="fa&#305;led">Fa&#305;led</td>
+          <td class="duration" data-value="9855254400">9.855</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -181,12 +181,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.604</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Negative Login Scenario with wrong password</span>
 
@@ -197,16 +197,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -216,15 +216,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When sk&#305;pped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">user enters username <span class="argument">&quot;salesmanager35@info.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.342</span>
 
 </div>
 
@@ -247,11 +247,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user enters password <span class="argument">&quot;salesmanagerx&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.345</span>
 
 </div>
 
@@ -274,11 +274,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks to login button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.692</span>
 
 </div>
 
@@ -301,11 +301,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then sk&#305;pped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">user sees Warning  message</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.224</span>
 
 </div>
 
@@ -332,9 +332,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -344,57 +344,17 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-3" class="inner-level collapse collapsable-details  in ">
+    <div id="after-3" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief fa&#305;led">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.fidexio.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.531</span>
+  <span class="lead-duration duration">0.161</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.WebDriverException: failed serving request POST /wd/hub/session: Unauthorized
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ARASAN', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: driver.version: Driver
-remote stacktrace: 
-	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.fidexio.utilities.Driver.getDriver(Driver.java:55)
-	at com.fidexio.step_definitions.Hooks.teardownScenario(Hooks.java:21)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -421,12 +381,12 @@ remote stacktrace:
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.554</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Negative Login Scenario with wrong password</span>
 
@@ -437,16 +397,16 @@ remote stacktrace:
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details  in ">
+  <div id="element-4" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -456,15 +416,15 @@ remote stacktrace:
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When sk&#305;pped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">user enters username <span class="argument">&quot;salesmanager25@info.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.329</span>
 
 </div>
 
@@ -487,11 +447,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user enters password <span class="argument">&quot;Salesmanager&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.333</span>
 
 </div>
 
@@ -514,11 +474,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks to login button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.684</span>
 
 </div>
 
@@ -541,11 +501,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-Then sk&#305;pped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">user sees Warning  message</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.207</span>
 
 </div>
 
@@ -572,9 +532,9 @@ remote stacktrace:
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-7">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -584,57 +544,17 @@ remote stacktrace:
 
     </div>
 
-    <div id="after-7" class="inner-level collapse collapsable-details  in ">
+    <div id="after-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief fa&#305;led">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.fidexio.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.453</span>
+  <span class="lead-duration duration">0.149</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
-          <a>Error message</a>
-      </div>
-      <div id="msg-8" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.WebDriverException: failed serving request POST /wd/hub/session: Unauthorized
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ARASAN', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: driver.version: Driver
-remote stacktrace: 
-	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.fidexio.utilities.Driver.getDriver(Driver.java:55)
-	at com.fidexio.step_definitions.Hooks.teardownScenario(Hooks.java:21)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -661,12 +581,12 @@ remote stacktrace:
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.696</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Negative Login Scenario with wrong password</span>
 
@@ -677,16 +597,16 @@ remote stacktrace:
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details  in ">
+  <div id="element-7" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -696,15 +616,15 @@ remote stacktrace:
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When sk&#305;pped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">user enters username <span class="argument">&quot;salesmanager55@info.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.384</span>
 
 </div>
 
@@ -727,11 +647,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user enters password <span class="argument">&quot;sallesmanager&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.371</span>
 
 </div>
 
@@ -754,11 +674,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks to login button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.704</span>
 
 </div>
 
@@ -781,11 +701,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-Then sk&#305;pped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">user sees Warning  message</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.235</span>
 
 </div>
 
@@ -812,9 +732,9 @@ remote stacktrace:
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-11">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -824,57 +744,17 @@ remote stacktrace:
 
     </div>
 
-    <div id="after-11" class="inner-level collapse collapsable-details  in ">
+    <div id="after-9" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief fa&#305;led">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.fidexio.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.553</span>
+  <span class="lead-duration duration">0.163</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
-          <a>Error message</a>
-      </div>
-      <div id="msg-12" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.WebDriverException: failed serving request POST /wd/hub/session: Unauthorized
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ARASAN', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: driver.version: Driver
-remote stacktrace: 
-	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.fidexio.utilities.Driver.getDriver(Driver.java:55)
-	at com.fidexio.step_definitions.Hooks.teardownScenario(Hooks.java:21)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -901,12 +781,12 @@ remote stacktrace:
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.659</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Negative Login Scenario with wrong password</span>
 
@@ -917,16 +797,16 @@ remote stacktrace:
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-10" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -936,15 +816,15 @@ remote stacktrace:
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When sk&#305;pped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">user enters username <span class="argument">&quot;posmanager35@info.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.342</span>
 
 </div>
 
@@ -967,11 +847,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user enters password <span class="argument">&quot;posmanagerx&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.345</span>
 
 </div>
 
@@ -994,11 +874,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks to login button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.758</span>
 
 </div>
 
@@ -1021,11 +901,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-Then sk&#305;pped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">user sees Warning  message</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.212</span>
 
 </div>
 
@@ -1052,9 +932,9 @@ remote stacktrace:
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-15">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1064,57 +944,17 @@ remote stacktrace:
 
     </div>
 
-    <div id="after-15" class="inner-level collapse collapsable-details  in ">
+    <div id="after-12" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief fa&#305;led">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.fidexio.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.522</span>
+  <span class="lead-duration duration">0.146</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
-          <a>Error message</a>
-      </div>
-      <div id="msg-16" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.WebDriverException: failed serving request POST /wd/hub/session: Unauthorized
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ARASAN', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: driver.version: Driver
-remote stacktrace: 
-	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.fidexio.utilities.Driver.getDriver(Driver.java:55)
-	at com.fidexio.step_definitions.Hooks.teardownScenario(Hooks.java:21)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -1141,12 +981,12 @@ remote stacktrace:
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.545</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Negative Login Scenario with wrong password</span>
 
@@ -1157,16 +997,16 @@ remote stacktrace:
   </span>
   <div class="description indention"></div>
 
-  <div id="element-17" class="collapse collapsable-details  in ">
+  <div id="element-13" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-18">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1176,15 +1016,15 @@ remote stacktrace:
 
   </div>
 
-  <div id="steps-18" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When sk&#305;pped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">user enters username <span class="argument">&quot;posmanager75@info.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.310</span>
 
 </div>
 
@@ -1207,11 +1047,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user enters password <span class="argument">&quot;posmanager75&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.318</span>
 
 </div>
 
@@ -1234,11 +1074,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks to login button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.709</span>
 
 </div>
 
@@ -1261,11 +1101,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-Then sk&#305;pped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">user sees Warning  message</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.206</span>
 
 </div>
 
@@ -1292,9 +1132,9 @@ remote stacktrace:
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-19">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1304,57 +1144,17 @@ remote stacktrace:
 
     </div>
 
-    <div id="after-19" class="inner-level collapse collapsable-details  in ">
+    <div id="after-15" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief fa&#305;led">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.fidexio.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.540</span>
+  <span class="lead-duration duration">0.157</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-20">
-          <a>Error message</a>
-      </div>
-      <div id="msg-20" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.WebDriverException: failed serving request POST /wd/hub/session: Unauthorized
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ARASAN', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: driver.version: Driver
-remote stacktrace: 
-	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.fidexio.utilities.Driver.getDriver(Driver.java:55)
-	at com.fidexio.step_definitions.Hooks.teardownScenario(Hooks.java:21)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -1381,12 +1181,12 @@ remote stacktrace:
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.795</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Negative Login Scenario with wrong password</span>
 
@@ -1397,16 +1197,16 @@ remote stacktrace:
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details  in ">
+  <div id="element-16" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1416,15 +1216,15 @@ remote stacktrace:
 
   </div>
 
-  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When sk&#305;pped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">user enters username <span class="argument">&quot;posmanager101@info.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.358</span>
 
 </div>
 
@@ -1447,11 +1247,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user enters password <span class="argument">&quot;Posmanager&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.350</span>
 
 </div>
 
@@ -1474,11 +1274,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-And sk&#305;pped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks to login button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.871</span>
 
 </div>
 
@@ -1501,11 +1301,11 @@ remote stacktrace:
       <div class="step">
 
 
-<div class="brief step-name-Then sk&#305;pped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">user sees Warning  message</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.215</span>
 
 </div>
 
@@ -1532,9 +1332,9 @@ remote stacktrace:
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-23">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
 
-<div class="brief fa&#305;led">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1544,57 +1344,17 @@ remote stacktrace:
 
     </div>
 
-    <div id="after-23" class="inner-level collapse collapsable-details  in ">
+    <div id="after-18" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief fa&#305;led">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.fidexio.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.594</span>
+  <span class="lead-duration duration">0.165</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
-          <a>Error message</a>
-      </div>
-      <div id="msg-24" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.WebDriverException: failed serving request POST /wd/hub/session: Unauthorized
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ARASAN', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: driver.version: Driver
-remote stacktrace: 
-	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.fidexio.utilities.Driver.getDriver(Driver.java:55)
-	at com.fidexio.step_definitions.Hooks.teardownScenario(Hooks.java:21)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
