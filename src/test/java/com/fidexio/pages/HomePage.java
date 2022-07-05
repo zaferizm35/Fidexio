@@ -12,4 +12,11 @@ public class HomePage {
 
     @FindBy(xpath = "//span[@class='oe_topbar_name']")
    public WebElement topBar;
+
+    @FindBy(xpath = "//a[@data-menu='logout']") public WebElement logoutButton;
+
+    @FindBy(xpath = "//span[@class='oe_topbar_name']")
+    public WebElement UserIdButton;
+
+    @FindBy(tagName = "h4") public WebElement AlertMessageOddo;
 }

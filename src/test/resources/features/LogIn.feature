@@ -17,10 +17,10 @@ Feature: Fidexio Login feature
   Background: User  see the login page
     Given user is on the login page
 
-
+@FIDE-1013
   Scenario Outline: Positive Login
-    When user enters  username "<Username>"
-    And user enters  password "<Password>"
+    When user enters username "<Username>"
+    And user enters password "<Password>"
     And user clicks to login button
     Then user sees "<UserID>" in the title
 
@@ -34,7 +34,7 @@ Feature: Fidexio Login feature
       | posmanager75@info.com   | posmanager   | Posmanager75   |
       | posmanager101@info.com  | posmanager   | Posmanager101  |
 
-
+@FIDE-1014
   Scenario Outline: Negative Login Scenario with wrong email , true password
     When user enters username "<Username>"
     And user enters password "<Password>"
@@ -51,7 +51,7 @@ Feature: Fidexio Login feature
       | Posmanager75@info.com    | posmanager   |
       | posmanager101x@info.com  | posmanager   |
 
-
+@FIDE-1015
   Scenario Outline: Negative Login Scenario with wrong password
     When user enters username "<Username>"
     And user enters password "<Password>"
@@ -68,12 +68,24 @@ Feature: Fidexio Login feature
       | posmanager75@info.com   | posmanager75  |
       | posmanager101@info.com  | Posmanager    |
 
+@FIDE-1016
+   Scenario:"Please fill out this field" message should be displayed if the password or username is empty
+     When user enters empty username
+     And  user enters empty password
+     And user clicks to login button
+     Then user see Please fill out this field message
 
-Scenario:Empty UsernameInput features and Empty passwordInput features
-  When user enters empty username
-  And  user enters empty password
-  And user clicks to login button
-  Then user sees Please fill out this field message
 
+ @FIDE-1017
+ Scenario: User land on the ‘reset password’ page after clicking on the "Reset password" link
+    When user user click the reset password link
+    Then user land on the reset password page
+
+  @FIDE-1018
+  Scenario: Verify if the ‘Enter’ key of the keyboard is working correctly on the login page
+    When user enters username
+    And user enters password
+    And user clicks to enter button
+    Then user goes to the home page
 
 
